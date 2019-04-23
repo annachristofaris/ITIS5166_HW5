@@ -1,0 +1,246 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 25, 2019, 7:51:06 PM
+    Author     : annachristofaris
+*/
+
+/* styles for the navigation bar */
+html { position: relative; min-height: 100%; }
+
+.topnav { 
+    /* outline: solid 1px red; */
+    border-bottom: solid 1px black;
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    padding-top: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: right;	
+}	
+
+.topnav li {
+    margin: 10px;
+    display: inline;
+    color: #113368;    
+}
+
+.username {
+    text-align: right;
+    padding-right:6px;
+    padding-top:5px;
+    text-transform: lowercase;
+    font-style: italic; 
+}
+
+
+body {
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+}
+
+.sidebar{
+
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    text-transform: uppercase;	
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.fa-star {
+    color: black;
+}
+
+.starfill {
+    color: black;
+}
+
+
+.mainArea{
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    padding-top: 20px;
+    padding-bottom: 50px;
+    left: 2%
+}
+
+.cat {
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    font-size: 17px;
+    color:#113368;
+}
+h1{
+
+    display: block;
+}
+h2{  font-family: 'Arapey', 'Helvetica', 'sans-serif';
+     font-size: 18px;
+     color:#556885;
+     margin-bottom: 0px;
+     margin-top: 5px;
+
+}
+
+
+h3{ font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    font-style:bold;
+    color: #1B1F20;
+    ;
+}		
+a.disabled {
+    pointer-events: none;
+    color:#A5A5A5;
+}
+
+
+footer {
+    border-top: solid 1px black;
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    font-size: 12px;
+    color:#7E7A76;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
+    text-align: left;
+}
+
+.tagline {
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.signIn {
+    background:url('./images/frontdoor1.jpg') no-repeat;
+    /*height: 500px;
+    width: 480px;*/
+    height: 500px;
+    width: 580px;
+    margin: 10px 10px 80px 20px;
+}
+
+.container{
+    height: 80%;
+    margin-top: 40px;
+    padding: 20px;
+    width: 75%;
+    background-color: rgba(0,0,0,0.5) !important;
+    align-content:center;
+}
+
+.btn{
+    color: #556885;
+    background-color: white;
+    width: 100px;
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    border-color: #556885;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #556885;
+    border-color: #556885;
+}
+
+.form {
+    color: white;  
+}
+
+select {
+    text-transform: none;
+    margin-right: 1em;
+}
+
+.submit {
+    display: inherit ! important;
+}
+
+
+.invalidLogin{
+    font-family: 'Arapey', 'Helvetica', 'sans-serif';
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ff7272;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 20px;
+
+}
+
+.small {
+    font-size: 12px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #556885;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 43%;
+    margin-left: -60px;
+    border-style: solid;
+    font-family: 'Arapey', sans-serif;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #556885 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popuptext a {
+    text-decoration: underline;
+    color: #eacbb9;
+}
+/*
+ Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
